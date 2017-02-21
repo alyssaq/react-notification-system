@@ -27,7 +27,7 @@ var STYLES = {
     DefaultStyle: {
       fontFamily: 'inherit',
       position: 'fixed',
-      width: defaultWidth,
+      width: '100%',
       padding: '0 10px 10px 10px',
       zIndex: 9998,
       WebkitBoxSizing: 'border-box',
@@ -86,7 +86,6 @@ var STYLES = {
     DefaultStyle: {
       position: 'relative',
       width: '100%',
-      cursor: 'pointer',
       borderRadius: '2px',
       fontSize: '13px',
       margin: '10px 0 0',
@@ -194,7 +193,8 @@ var STYLES = {
       width: '14px',
       height: '14px',
       fontWeight: 'bold',
-      textAlign: 'center'
+      textAlign: 'center',
+      cursor: 'pointer'
     },
 
     success: {
