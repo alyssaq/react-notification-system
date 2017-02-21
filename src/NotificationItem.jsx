@@ -302,7 +302,6 @@ var NotificationItem = React.createClass({
       actionButton = (
         <div className="notification-action-wrapper" style={ this._styles.actionWrapper }>
           <button className="notification-action-button"
-            onClick={ this._defaultAction }
             style={ this._styles.action }>
               { notification.action.label }
           </button>
