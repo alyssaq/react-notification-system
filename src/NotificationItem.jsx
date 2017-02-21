@@ -295,7 +295,7 @@ var NotificationItem = React.createClass({
     }
 
     if (notification.dismissible) {
-      dismiss = <span className="notification-dismiss" style={ this._styles.dismiss }>&times;</span>;
+      dismiss = <span className="notification-dismiss" onClick={ this._dismiss } style={ this._styles.dismiss }>&times;</span>;
     }
 
     if (notification.action) {
@@ -315,7 +315,7 @@ var NotificationItem = React.createClass({
     }
 
     return (
-      <div className={ className } onClick={ this._dismiss } onMouseEnter={ this._handleMouseEnter } onMouseLeave={ this._handleMouseLeave } style={ notificationStyle }>
+      <div className={ className } onMouseEnter={ this._handleMouseEnter } onMouseLeave={ this._handleMouseLeave } style={ notificationStyle }>
         { title }
         { message }
         { dismiss }
