@@ -27,7 +27,7 @@ var STYLES = {
     DefaultStyle: {
       fontFamily: 'inherit',
       position: 'fixed',
-      width: '100%',
+      width: defaultWidth,
       padding: '0 10px 10px 10px',
       zIndex: 9998,
       WebkitBoxSizing: 'border-box',
