@@ -1,13 +1,15 @@
 var React = require('react');
 var NotificationItem = require('./NotificationItem');
 var Constants = require('./constants');
+var createReactClass = require('create-react-class');
+var PropTypes = require('prop-types');
 
-var NotificationContainer = React.createClass({
+var NotificationContainer = createReactClass({
 
   propTypes: {
-    position: React.PropTypes.string.isRequired,
-    notifications: React.PropTypes.array.isRequired,
-    getStyles: React.PropTypes.object
+    position: PropTypes.string.isRequired,
+    notifications: PropTypes.array.isRequired,
+    getStyles: PropTypes.object
   },
 
   _style: {},
